@@ -61,7 +61,7 @@ const WebcamCapture: React.FC = () => {
         ref={webcamRef}
         audio={false}
         screenshotFormat="image/jpeg"
-        videoConstraints={{ deviceId: deviceId ? { exact: deviceId } : undefined, facingMode: "environment"}}
+        videoConstraints={{ deviceId: deviceId ? { exact: deviceId } : undefined, facingMode: "user"}}
         style={{ width: 400, borderRadius: 8 }}
       />
 
